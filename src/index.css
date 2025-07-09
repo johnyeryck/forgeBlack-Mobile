@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+
+.swiper-pagination-bullet-active {
+  background: greenyellow !important;
+}
+
+.swiper-pagination {
+  position: relative !important; /* tira do posicionamento absoluto */
+  margin-top: 1rem; /* dá um espaço abaixo da imagem */
+}
