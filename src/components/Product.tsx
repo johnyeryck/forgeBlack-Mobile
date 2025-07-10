@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+import slugify from "slugify"
 interface Productinterface {
     id : number,
     valor : number,
@@ -9,6 +11,7 @@ interface Productinterface {
 const Product : React.FC<Productinterface> = ({img , nome , valor , value_anterior})=>{
     return(
         <article className="border-b rounded-lg h-auto w-41">
+            <Link to={`/produto/${slugify(nome)}`}>
             <img src={img} alt={`Imagem de ${nome}`} className="rounded-xl ml-auto mr-auto" />
             <div className="rounded-lg ">
                 <div className="h-18">
@@ -21,6 +24,7 @@ const Product : React.FC<Productinterface> = ({img , nome , valor , value_anteri
                     )}
                 </div>
             </div>
+                    </Link>
         </article>
     )
 }
