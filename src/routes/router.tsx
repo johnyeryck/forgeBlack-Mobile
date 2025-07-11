@@ -4,7 +4,7 @@ import Buypage from "../pages/Buypage"
 
 const router = createBrowserRouter([
   {
-    path : "/produto/:slug",
+    path : "/produto/:slug/:id",
     element : <Buypage />
   },
   {
