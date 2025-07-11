@@ -7,8 +7,7 @@ import {GoArrowLeft} from 'react-icons/go'
 function Buypage(){
     const data = useContext(MyContext)
     const { id } = useParams();
-    console.log(data)
-
+   
     return(
         <>
         <main>
@@ -26,13 +25,17 @@ function Buypage(){
                                     <p className="text-green-500  text-2xl ">R${P.valor}</p>
                                     <p className="text-white ">{P.nome}</p>
                                 </div>
-                                <div className="w-[80%] ml-auto mr-auto h-10 mb-10 mt-2">
-                                    <button className="bg-green-500 size-full rounded-lg ">
-                                        <div className="text-white w-auto ml-auto mr-auto inline-flex">
-                                                <FaWhatsapp className="size-5 pr-1 ml-auto "/>
-                                                 <p className="mr-auto">Fale Conosco</p>
+                                <div className="w-[80%] ml-auto mr-auto h-10 mb-10 mt-2 ">
+                                    <a href={`whatsapp://send?phone=5583999246257&text=${encodeURIComponent(`Olá Gostaria de saber mais sobre ${P.nome}`)}`}
+                                    className="w-full  h-full block"
+                                    role="button"
+                                    aria-label="Fale conosco pelo whatsapp"
+                                    >
+                                        <div className="text-white ml-auto mr-auto inline-flex h-full  w-full bg-green-500 rounded-lg items-center">
+                                            <FaWhatsapp className="size-5 pr-1 ml-auto "/>
+                                            <p className="mr-auto">Fale Conosco</p>
                                         </div>
-                                    </button>
+                                    </a>
                                 </div>
                                 <div className="w-[80%] size-auto text-white ml-auto mr-auto ">
                                     <h3 className="text-2xl mb-3">Descrição:</h3>
