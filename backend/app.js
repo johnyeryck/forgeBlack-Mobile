@@ -17,7 +17,7 @@ app.get("/", (req , res)=>{
 
 
 app.get("/produtos", (req, res) => {
-    const sql = `SELECT id, nome, valor, img , value_anterior FROM produtos`
+    const sql = `SELECT id, nome, valor, img , value_anterior,description FROM produtos`
     db.all(sql, (error, rows) => {
         if (error) {
             console.log(error)
