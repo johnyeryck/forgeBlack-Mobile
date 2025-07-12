@@ -9,6 +9,10 @@ function Wrapper(){
     queryFn: async () => {
       const response = await fetch("https://bf-backendservice.onrender.com/produtos", {
         method: "GET",
+        headers: {
+        "Content-Type": "application/json",
+        "Accept": "application/json"
+        },
       });
       if (!response.ok) {
         throw new Error("Network response was not ok");
