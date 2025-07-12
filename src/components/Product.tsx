@@ -30,7 +30,7 @@ const Product : React.FC<Productinterface> = ({img , nome , valor , value_anteri
                         <h3 className="font-light pl-1 text-white ">{nome.length > 25 ? nome.slice(0,20) + "..." : nome}</h3>
                 </div>
                 <div className="flex pt-2 ">
-                    <p className="text-green-400 font-bold pl-2">R${valor}</p>
+                    <p className="text-green-400 font-bold ">R${valor}</p>
                     {value_anterior && (
                         <p className="line-through pl-2">R${value_anterior}</p>
                     )}
