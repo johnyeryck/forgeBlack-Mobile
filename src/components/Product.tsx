@@ -22,17 +22,17 @@ function slugify(texto : string) {
 
 const Product : React.FC<Productinterface> = ({img , nome , valor , value_anterior,id})=>{
     return(
-        <article className="border-b rounded-lg h-auto w-41" key={id}>
+        <article className=" rounded-lg h-auto w-41" key={id}>
             <Link to={`/produto/${slugify(nome)}/${id}`}>
             <img src={img} alt={`Imagem de ${nome}`} className="rounded-xl ml-auto mr-auto" />
             <div className="rounded-lg">
                 <div className="h-18">
                         <h3 className="font-light pl-1 text-white ">{nome.length > 25 ? nome.slice(0,20) + "..." : nome}</h3>
                 </div>
-                <div className="flex pt-2 ">
+                <div className="flex pt-2 w-[80%] mt-2">
                     <p className="text-green-400 font-bold ">R${valor}</p>
                     {value_anterior && (
-                        <p className="line-through pl-2">R${value_anterior}</p>
+                        <p className="line-through pl-2 text-sm">R${value_anterior}</p>
                     )}
                 </div>
             </div>
