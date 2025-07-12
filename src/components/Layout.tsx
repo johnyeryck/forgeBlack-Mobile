@@ -34,7 +34,7 @@ function Layout() {
       {listimg.map((img, index) => (
         <SwiperSlide key={index} className="mt-20">
           <div className="relative w-full h-64">
-            <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent z-10"></div>
+            <div className="absolute inset-0 bg-gradient-to-b opacity-40 from-black to-transparent z-10"></div>
             <img src={img} className="w-full h-full object-cover " />
           </div>
         </SwiperSlide>

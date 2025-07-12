@@ -11,11 +11,13 @@ function Footer (){
                 <p className="text-2xl">Links</p>
                 <div className="flex flex-col">
                     <a href="">Contato</a>
-                    <a href="">forgeblack6@gmail.com</a>
+                    <a href="mailto:forgeblack6@gmail.com">forgeblack6@gmail.com</a>
                     <a href="">Política de Privacidade</a>
                  <div className='flex'>
+                    <a href="https://www.instagram.com/black_forge">
                      <img src={Instagram} alt="" className='size-7 mt-4 ' />
-                     <a href="https://api.whatsapp.com/send/?phone=83999246257&text&type=phone_number&app_absent=0">
+                    </a>
+                     <a href="whatsapp://send?phone=5583999246257">
                      <img src={Whats} alt="" className='size-7 mt-4 ml-2' />
                      </a>
                      

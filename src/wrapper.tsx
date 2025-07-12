@@ -7,7 +7,7 @@ function Wrapper(){
     const { data } = useQuery({
     queryKey: ["produtos"],
     queryFn: async () => {
-      const response = await fetch("http://localhost:3000/produtos", {
+      const response = await fetch("http://192.168.1.41:3000/produtos", {
         method: "GET",
       });
       if (!response.ok) {
