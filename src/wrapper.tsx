@@ -7,7 +7,7 @@ function Wrapper(){
     const { data } = useQuery({
     queryKey: ["produtos"],
     queryFn: async () => {
-      const response = await fetch("https://bf-backendservice.onrender.com", {
+      const response = await fetch("https://bf-backendservice.onrender.com/produtos", {
         method: "GET",
       });
       if (!response.ok) {
