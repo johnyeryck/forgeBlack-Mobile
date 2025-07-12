@@ -14,7 +14,7 @@ function Promo(){
     return(
         <>
        <header className="mt-20  text-white ml-auto mr-auto" >
-        <h1 className="font-bold  pl-6 text-white">Promoções</h1>
+        <h1 className="font-bold  pl-8 pb-1 text-white">Promoções</h1>
         <div className="flex justify-evenly">
                 {
                     data && data.length > 0? (
