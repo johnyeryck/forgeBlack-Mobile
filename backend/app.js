@@ -5,7 +5,7 @@ import cors from 'cors'
 const app = express()
 app.use(
   cors({
-    origin: ["https://forgeblack.onrender.com/"
+    origin: ["https://www.blackforge.com/"
     ],
     methods: ["GET"],
     credentials: true,
