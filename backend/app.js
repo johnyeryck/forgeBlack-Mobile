@@ -5,9 +5,7 @@ import cors from 'cors'
 const app = express()
 app.use(
   cors({
-    origin: ["http://localhost:4173",
-        "http://localhost:5174",
-        "http://192.168.1.41:5174"
+    origin: ["https://www.blackforge.com.br/"
     ],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
