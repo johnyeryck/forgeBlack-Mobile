@@ -7,7 +7,7 @@ function Wrapper(){
     const { data } = useQuery({
     queryKey: ["produtos"],
     queryFn: async () => {
-      const response = await fetch("https://www.blackforge.com.br/backend/produtos", {
+      const response = await fetch("https://blackforge.onrender.com", {
         method: "GET",
       });
       if (!response.ok) {
