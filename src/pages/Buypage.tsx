@@ -26,7 +26,7 @@ function Buypage(){
                                     <p className="text-white ">{P.nome}</p>
                                 </div>
                                 <div className="w-[80%] ml-auto mr-auto h-10 mb-10 mt-2 ">
-                                    <a href={`whatsapp://send?phone=5583999246257&text=${encodeURIComponent(`Olá, Gostaria de saber mais sobre o(a)${P.nome}`)}`}
+                                    <a href={`whatsapp://send?phone=5583999246257&text=${encodeURIComponent(`Olá, Gostaria de saber mais sobre o(a) ${P.nome}`)}`}
                                     className="w-full  h-full block"
                                     role="button"
                                     aria-label="Fale conosco pelo whatsapp"
